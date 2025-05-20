@@ -1,0 +1,17 @@
+import 'package:flutter_test/flutter_test.dart';
+import 'package:http/http.dart' as http;
+import 'package:mockito/mockito.dart';
+import 'package:mockito/annotations.dart';
+
+// Generate the Mock HttpClient
+@GenerateMocks([http.Client])
+void main() {
+  group('Iris Predictor App Tests', () {
+    // Basic app launch test
+    testWidgets('App should launch without errors', (WidgetTester tester) async {
+      // Add test implementation here
+    });
+
+    // Integration tests would be added here
+  });
+}
